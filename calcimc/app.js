@@ -33,7 +33,7 @@ app.post("/imc", (req, res) => {
   } else if (result < 35) {
     classificacao = "obesidade grau 1";
   } else if (result < 40) {
-    classificacao = "obesidaded grau 2";
+    classificacao = "obesidade grau 2";
   }
   res.send(`Seu IMC é ${result.toFixed(2)}  ${classificacao}`);
 });
